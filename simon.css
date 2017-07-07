@@ -1,0 +1,238 @@
+body {
+    font-family: 'Oswald', sans-serif;
+  margin-top: 20px;
+  background-image: url("http://www.richardkeightley.com/Images/walnut.jpg");
+}
+
+#circle {
+  background: #2c3539;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0px 0px 16px black;
+  z-index: -2;
+  }
+
+#shadow {
+
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -3;
+}
+
+#red, #green, #blue, #yellow {
+  height: 180px;
+  width: 180px;
+  border-radius: 0%;
+  position: absolute;
+}
+
+#green {
+  left: 3%;
+  top: 3%;
+  border-top-left-radius: 100%;
+}
+.greenOn {
+  background-color: #52d017;
+}
+.greenOff {
+  background-color: #347c2c;
+}
+
+#red {
+  left: 52%;
+  top: 3%;
+  border-top-right-radius: 100%;
+}
+.redOn {
+    background: #f62817;
+}
+.redOff {
+  background: #9f000f;
+}
+#blue {
+  top: 52%;
+  left: 52%;
+  border-bottom-right-radius: 100%;
+}
+.blueOn {
+    background: #1589ff;
+}
+.blueOff {
+    background: #15317e;
+}
+#yellow {
+  top: 52%;
+  left: 3%;
+  border-bottom-left-radius: 100%;
+}
+.yellowOn {
+  background: yellow;
+}
+.yellowOff{
+    background: #fbb917;
+}
+
+#controls {
+  background: white;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 1;
+  border: 10px;
+  border-style: solid;
+  border-color: #2c3539;
+}
+
+#simon {
+  font-size: 40px;
+  color: black;
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+
+#count {
+  position: absolute;
+  top: 90px;
+  left: 15px;
+  width: 60px;
+  background: #0c090a;
+  height: 40px;
+  border-radius: 10%;
+  border: 2px;
+  border-color: gray;
+  border-style: solid;
+}
+
+#countText {
+  color: red;
+  font-size: 30px;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+.countTextOff {
+    opacity: 0.2;
+  }
+.countTextOn {
+  opacity: 1.0;
+}
+
+#start {
+  position: absolute;
+  top: 92px;
+  left: 90px;
+  height: 32px;
+  width: 32px;
+  background: darkgreen;
+  border-radius: 50%;
+  border-color: gray;
+  border-style: solid;
+  border-width: 4px;
+  box-shadow: 2px 2px 4px;
+  z-index: 2;
+}
+#start:active {
+  transform: translateY(1px);
+}
+
+#strict {
+  position: absolute;
+  top: 96px;
+  left: 154px;
+  height: 30px;
+  width: 30px;
+  border-radius: 10%;
+  border-color: gray;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 1px 1px 2px;
+  z-index: 10;
+}
+.strictOn {
+  background-color: red;
+}
+.strictOff {
+  background-color: darkred;
+}
+
+#txtLine {
+  font-size: 14px;
+  color: #342;
+  position: absolute;
+  top: 62%;
+  left: 14%;
+}
+#wrdStart{
+  position: absolute;
+  left: 67px;
+}
+#wrdStrict{
+  position: absolute;
+  left: 126px;
+}
+
+#onOffLine {
+  font-size: 14px;
+  color: #342;
+  position: absolute;
+  top: 75%;
+  left: 40%;
+}
+#wrdOff {
+  position: absolute;
+  left: -25px;
+}
+#wrdOn {
+  position: absolute;
+  left: 57px;
+}
+
+#switchBox {
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  height: 20px;
+  width: 50px;
+  background: black;
+  border-radius: 10%;
+  border-color: gray;
+  border-style: solid;
+  border-width: 2px;
+}
+#switch {
+  height: 18px;
+  width: 18px;
+  background: lightblue;
+  z-index: 2;
+  position: absolute;
+  transition: left .1s linear;
+}
+.off {
+  left: 1px;
+}
+.on {
+  left: 30px;
+}
+
+#feedback {
+  position: absolute;
+  height: 60px; width: 200px;
+  background-color: white;
+  border: black solid 2px;
+}
+

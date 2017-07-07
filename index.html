@@ -1,0 +1,47 @@
+<html>
+    <head>  
+        
+        <title>FCC Simon Game</title>
+        <link rel="shortcut icon" href="">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="simon.css">
+
+        <script src="jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="simon.js"></script>
+
+<base href="http://www.richardkeightley.com/"/>
+  </head>
+  
+<body>
+<audio preload="auto" id="duck" > assets/duck.mp3 </audio>
+<audio preload="auto" id="goat" > assets/goat.mp3 </audio>
+<audio preload="auto" id="horse" > assets/horse.mp3 </audio>
+<audio preload="auto" id="cat" > assets/cat.mp3 </audio>
+
+
+<audio id="quack" src="../assets/duck.mp3" ></audio>
+<audio id="meow" src="../assets/cat.mp3" ></audio>  
+<audio id="whinny" src="../assets/horse.mp3" ></audio>
+<audio id="baah" src="../assets/goat.mp3" ></audio>
+<div id="circle">  
+    <div id="red" onclick="human()"></div>
+    <div id="green" onclick="human()"></div>
+    <div id="blue" onclick="human()"></div>
+    <div id="yellow" onclick="human()"></div> 
+    <div id="controls">
+         <div id="simon">Simon</div>   
+         <div id="count">
+              <div id="countText">--</div>
+         </div> <!-- end count -->
+         <div id="start" onclick="startGame()"></div>
+         <div id="strict" onclick="stricToggle()"></div><br>
+         <div id="txtLine"><span id="wrdCount">Count</span><span id="wrdStart">Start</span><span id="wrdStrict">Strict</span></div> <!-- end txtLine -->
+         <div id="onOffLine"><span id="wrdOff">OFF</span><span id="switchBox" onclick="toggle()"><span id="switch" class="off"></span></span><span id="wrdOn">ON</span></div> <!-- end onOffLine -->
+    </div> <!-- end controls -->
+  </div> <!-- end circle -->
+  <div id="shadow"></div>
+  <div id="feedback"></div>
+</body>
+</html>
