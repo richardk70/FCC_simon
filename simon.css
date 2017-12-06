@@ -1,5 +1,5 @@
 body {
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin-top: 20px;
   background-image: url("http://www.richardkeightley.com/Images/walnut.jpg");
 }
@@ -15,10 +15,9 @@ body {
   transform: translate(-50%, -50%);
   box-shadow: inset 0px 0px 16px black;
   z-index: -2;
-  }
+}
 
 #shadow {
-
   height: 400px;
   width: 400px;
   border-radius: 50%;
@@ -41,46 +40,37 @@ body {
   left: 3%;
   top: 3%;
   border-top-left-radius: 100%;
-}
-.greenOn {
-  background-color: #52d017;
-}
-.greenOff {
-  background-color: #347c2c;
+  background: green;
 }
 
 #red {
   left: 52%;
   top: 3%;
   border-top-right-radius: 100%;
+  background: red;
 }
-.redOn {
-    background: #f62817;
-}
-.redOff {
-  background: #9f000f;
-}
+
 #blue {
   top: 52%;
   left: 52%;
   border-bottom-right-radius: 100%;
+  background: blue;
 }
-.blueOn {
-    background: #1589ff;
-}
-.blueOff {
-    background: #15317e;
-}
+
 #yellow {
   top: 52%;
   left: 3%;
   border-bottom-left-radius: 100%;
-}
-.yellowOn {
   background: yellow;
 }
-.yellowOff{
-    background: #fbb917;
+.on {
+  opacity: 1.0;
+  transition: opacity 0.1s linear;
+}
+
+.off {
+  opacity: 0.5;
+  transition: opacity 0.1s linear;
 }
 
 #controls {
@@ -126,8 +116,8 @@ body {
   text-align: center;
 }
 .countTextOff {
-    opacity: 0.2;
-  }
+  opacity: 0.2;
+}
 .countTextOn {
   opacity: 1.0;
 }
@@ -222,17 +212,16 @@ body {
   position: absolute;
   transition: left .1s linear;
 }
-.off {
+.powerOff {
   left: 1px;
 }
-.on {
+.powerOn {
   left: 30px;
 }
 
 #feedback {
   position: absolute;
-  height: 60px; width: 200px;
+  height: 100px; width: 250px;
   background-color: white;
   border: black solid 2px;
 }
-
